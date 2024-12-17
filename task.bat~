@@ -1,0 +1,12 @@
+
+
+if "%~1"==""(
+	echo error
+	exit /b 1
+)
+
+SET task_name=%~1
+
+git add .
+git commit -m "%task_name%"
+git push origin main
